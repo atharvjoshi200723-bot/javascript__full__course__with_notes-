@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <style>
+        .content {
+            color: pink;
+        }
+
+        .newclass {
+            background-color: aquamarine;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="console.log('button was clicked'); alert('you clicked the button')">
+        Click me
+    </button>
+
+    <button ondblclick="console.log('button was clicked 2 times');">
+        Click me twice
+    </button>
+
+    <div onmouseover="console.log('you hovered over the div')">
+        This is a box
+    </div>
+
+</body>
+</html>

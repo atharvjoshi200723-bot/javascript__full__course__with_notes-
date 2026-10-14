@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightseagreen;
+            text-align: center;
+        }
+
+        .contain {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game {
+            height: 60vmin;
+            width: 60vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5vmin;
+        }
+
+        .box {
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 0.5rem;
+            border: none;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+            font-size: 10vmin;
+            color: lightcoral;
+        }
+
+        #reset {
+            padding: 1rem;
+            font-size: 1.25rem;
+            background-color: #191913;
+            color: #fff;
+            border-radius: 1rem;
+            border: none;
+        }
+
+        #msg {
+            color: #fff;
+            font-size: 8vmin;
+        }
+
+        #newbtn {
+            padding: 1rem;
+            font-size: 1rem;
+            background-color: #191913;
+            color: #fff;
+            border-radius: 1rem;
+            border: none;
+        }
+
+        .msg-container {
+            height: 25vmin;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- IMPORTANT: msg-container -->
+    <div class="msg-container hide">
+        <p id="msg">winner winner chicken dinner</p>
+        <button id="newbtn">NEW GAME</button>
+    </div>
+
+    <main>
+        <h1>Tic Tac Toe</h1>
+
+        <div class="contain">
+            <div class="game">
+
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+
+            </div>
+        </div>
+
+        <button id="reset">RESET</button>
+
+    </main>
+
+    <script src="ticktack.js"></script>
+
+</body>
+</html>

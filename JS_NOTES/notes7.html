@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>document</title>
+       
+    </head>
+    <body>
+<div style="font-size: 28px;">
+    <h1>
+        callbacks promises async await
+    </h1>
+    <div style="background-color: pink;">
+        <h1>
+            sync in js 
+        </h1>
+        synchromous 
+        synchronous means the code runs in a particuar sequence of instruction given
+        in the program
+        each instruction waits for the previous istruction to complete 
+        it executipon
+
+
+        <h1>asynchronous</h1>
+
+        dur to synchronus programing sometimes imp instruction get blocked due to
+        some previous instruction whihc causes dealy in the ui
+        asyanchronous code execution allows next instruction immmediatly and doesnt block the flow 
+
+
+        <h1>callbacks hell</h1>
+nested callbacks stacked below one another forming a 
+pyramid structure (pyramid of doom)
+
+this style of programing becomes difficult to understand 
+and manange 
+
+to solve callback we have promisies 
+
+    </div>
+
+    <div style="background-color: aqua;">
+        <h1>
+            promies
+        </h1>
+
+        promise is for a eventual completion of task
+        it is soln to callback hell
+
+below is the syntax 
+
+
+
+
+
+        let promise =new promise ((resolve,reject)=>{
+
+        })
+    </div>
+    <div>
+            /*promis eis obj in js 
+    which has three state pending ,reoslve rejceted
+    in genral programing we do not make promise we us ecall it like for example api keys 
+    etc dusre system create karte hai promise s
+    </div>
+    <div style="background-color: pink;">
+        <h1>asyn await</h1>
+        async functio always return a promise 
+        asycn function is a function which is declared with async keyword
+        await is used to wait for a promise to resolve or reject
+
+        await paiuses the execution of its surrounding funtion untill the promise is setelled 
+        <P>/*we use this so that we can check our data one by one like if first is called then the second should be
+be called like in instagram first username gets checked and then pass word 
+like one by one */</P>
+<p>IIFE imediatlly invoked function 
+    it is a function which is invoked immediately after its declaration
+</p>
+    </div>
+</div>
+    </body>
+
+   
+</html>
